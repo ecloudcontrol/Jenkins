@@ -10,7 +10,7 @@ build:
     image_template: jenkins-2.0
     image_name: alpha/jenkins
 deploy:
-    context: alpha-dev
+    context: alpha/DEV
     replicas: 1
     port:
     - 8080
