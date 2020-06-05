@@ -17,4 +17,4 @@ deploy:
 monitor:
     notify: appzops@cloudbourne.co      
 properties:
-    revision: 11
+    revision: 10
