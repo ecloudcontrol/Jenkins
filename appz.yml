@@ -1,5 +1,5 @@
 app:
-    name: Jenkins
+    name: jenkins
     code: JENKINS
     notify: appzdev@cloudbourne.co
 build:
