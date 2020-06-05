@@ -14,13 +14,6 @@ deploy:
     replicas: 1
     port:
     - 8080
-volumes:
-  - claim: vault-home
-    mount: /appz/home
-    name: home
-  - claim: vault-data
-    mount: /appz/data
-    name: data
 monitor:
     notify: appzops@cloudbourne.co      
 properties:
