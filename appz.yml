@@ -1,0 +1,27 @@
+app:
+    name: Jenkins
+    code: JENKINS
+    notify: appzdev@cloudbourne.co
+build:
+    version: 2.0
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: jenkins-2.0
+    image_name: alpha/jenkins
+deploy:
+    context: alpha-dev
+    replicas: 1
+    port:
+    - 8080
+volumes:
+  - claim: vault-home
+    mount: /appz/home
+    name: home
+  - claim: vault-data
+    mount: /appz/data
+    name: data
+monitor:
+    notify: appzops@cloudbourne.co      
+properties:
+    revision: 11
