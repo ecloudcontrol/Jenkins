@@ -17,4 +17,5 @@ deploy:
 monitor:
     notify: appzops@cloudbourne.co      
 properties:
+    WEB_CONTEXT: /jenkins
     revision: 11
