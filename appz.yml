@@ -2,6 +2,7 @@ app:
     name: jenkins
     code: JENKINS
     notify: appzdev@cloudbourne.co
+    
 build:
     version: 2.0
     env: DEV
@@ -9,13 +10,17 @@ build:
     output_files: output/*.zip
     image_template: jenkins-2.0
     image_name: alpha/jenkins
+    
 deploy:
     context: alpha/DEV
     replicas: 1
     port:
     - 8080
+    - 5000
+    
 monitor:
-    notify: appzops@cloudbourne.co      
+    notify: appzops@cloudbourne.co 
+    
 properties:
     WEB_CONTEXT: /jenkins
     revision: 11
