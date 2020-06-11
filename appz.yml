@@ -23,3 +23,8 @@ monitor:
 properties:
     WEB_CONTEXT: /jenkins
     revision: 11
+    
+volumes:
+  - claim: jenkins-home
+    mount: /var/jenkins_home
+    name: home
