@@ -22,9 +22,9 @@ monitor:
     
 properties:
     WEB_CONTEXT: /jenkins
-    revision: 13
+    revision: 14
     
 volumes:
-  - claim: jenkins-home
-    mount: /var/jenkins_home
+  - claim: jenkins-data
+    mount: /appz/data
     name: home
