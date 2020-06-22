@@ -22,7 +22,7 @@ monitor:
     
 properties:
     WEB_CONTEXT: /jenkins
-    revision: 14
+    revision: 15
     
 volumes:
   - claim: jenkins-data
